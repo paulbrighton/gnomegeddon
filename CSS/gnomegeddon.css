@@ -1,0 +1,1028 @@
+/*Global*/
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0 auto;
+    font-family: lato, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    font-size: 3.5vw;
+    padding-left: 0.78125%;
+    padding-top: 1em;
+    padding-bottom: 1.25em;
+    text-align: left;
+    color: #000;
+}
+
+h2 {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    font-size: 3.5vw;
+    padding-left: 0.78125%;
+    padding-top: 1em;
+    padding-bottom: 1.25em;
+    text-align: left;
+}
+
+/*Header Section*/
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    color: #fff;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+/*Media Query for IE*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+}
+}
+ 
+/*Media Query for Edge*/
+@supports (-ms-accelerator:true) {
+    .fullscreen-video-wrap video {
+    background-image: url(Front-End/images/grassland.png);
+}
+}
+
+.header-content {
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header img {
+    display: block;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6.5625em;
+}
+
+.logo {
+    width: 500px;
+    max-width: 98%;
+    height: auto;
+}
+
+.downloadbtn {
+    padding-top: 2.1875em;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+}
+
+.navbarcontent {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.78125%;
+    vertical-align: middle;
+}
+
+.navbar img {
+    display: inline;
+    float: left;
+    padding-right: 0.78125%;
+    padding-left: 1.5625%;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    width: 60px;
+    
+}
+
+
+
+.navbar p {
+    float: right;
+    font-weight: 900;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 10px;
+    
+}
+
+/* Dropdown Navigation Button */
+.dropbtn {
+    background: none;
+    color: white;
+    padding: 16px 30px 16px 16px;
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0,0,0,0.5)
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100%;
+    bottom: 100%;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.dropdownnav {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    float: right;
+    margin-right: 0;
+    padding-right: 0;   
+}
+
+/*About Section*/
+
+.about {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.abouttext {
+    width: 48.4375%;
+    float: left;
+    padding-left: 0.78125%;
+    padding-right: 0.78125%;
+}
+
+.abouttext p {
+    font-family: lato, sans-serif;
+    font-size: 1.4vw;
+    padding-bottom: 1.5625em;
+    padding-left: 0.78125%;
+    padding-right: 10.9375%;
+    text-align: left;
+}
+
+.abouttext p:nth-child(5) {
+    font-size: 1.6vw;
+    margin-bottom: 2.25em;
+}
+
+.knowmore {
+    font-weight: 700;
+    margin-top: 0.9375em;
+}
+
+.itchlink {
+    text-decoration: none;
+    color: #9a3737;
+}
+
+.itchlink:hover {
+    text-decoration: underline;
+}
+
+/*Trailer Section*/
+
+.trailer {
+    width: 48.4375%;
+    float: left;
+    padding-right: 0.78125%;
+    padding-right: 0.78125%;
+    padding-top: 12.25em;
+}
+
+.trailer video {
+    max-width: 100%;
+    height: auto; 
+}
+
+.trailer figcaption {
+    padding-bottom: 4.375em;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+/*Screenshots Section*/
+
+.img-container {
+    float: left;
+    display: block;
+    width: 23.4375%;
+    margin-left: 0.78125%;
+    margin-right: 0.78125%;
+    display: block;
+}
+
+.screenshots figure img {
+    border: 1px solid black;
+    display: block;
+}
+
+.screenshots {
+    clear: both;
+    background-color: #2c5b4b;
+    margin: 0 auto;
+    display: block;
+}
+
+.screenshots .container {
+    clear: both;
+    width: 100%;
+    max-width: 1280px;
+    background-color: #2c5b4b;
+    color: #fff;
+    padding-bottom: 4.25em;
+}
+
+.screenshots figure {
+    float: left;
+    margin-left: 0.78125%;
+    margin-right: 0.78125%;
+    margin-bottom: 3em;
+}
+
+.screenshots figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.screenshots figcaption {
+    font-size: 1.1vw;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+/*Gnomes Section*/
+
+.gnomescontainer {
+    width: 100%;
+}
+
+.gnomes {
+    clear: both;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 1.55em;
+}
+
+.gnomes figure {
+    width: 100%;
+    height: auto; 
+}
+
+.abominable {
+    width: 23.4375%;
+    float: left;
+    margin-left: 7.421875%;
+    margin-bottom: 2.1875em;
+}
+
+.abominable img {
+    width: 100%;
+    height: auto;
+}
+
+.gnomeinator {
+    width: 23.4375%;
+    float: left;
+    margin-left: 7.421875%;
+    margin-bottom: 2.1875em;
+}
+
+.gnomeinator img {
+    width: 100%;
+    height: auto;
+}
+
+.gnomerunner {
+    width: 23.4375%;
+    float: left;
+    margin-left: 7.421875%;
+    margin-bottom: 2.1875em;
+}
+
+.gnomerunner img {
+    width: 100%;
+    height: auto;
+}
+
+.inuit {
+    width: 23.4375%;
+    float: left;
+    margin-left: 7.421875%;
+    margin-bottom: 2.1875em;
+}
+
+.inuit img {
+    width: 100%;
+    height: auto;
+}
+
+.mummy {
+    width: 23.4375%;
+    float: left;
+    margin-left: 7.421875%;
+    margin-bottom: 2.1875em;
+
+}
+
+.mummy img {
+    width: 100%;
+    height: auto;
+}
+
+.mummyrender {
+    width: 23.4375%;
+    float: left;
+    margin-left: 7.421875%;
+    margin-bottom: 2.1875em;
+}
+
+.mummyrender img {
+    width: 100%;
+    height: auto;
+}
+
+.gnomes figcaption {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.3vw;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+.gnomes p {
+    font-family: lato, sans-serif;
+    font-size: 1.1vw;
+    text-align: center;
+    padding-bottom: 1.5625em;
+    
+}
+
+/*Get Section*/
+
+.get {
+    clear: both;
+    overflow: hidden;
+    background-color: #9a3737;
+    color: #000;
+}
+
+.get .container {
+    clear: both;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #9a3737;
+    overflow: hidden;
+}
+
+.get h2 {
+    color: #fff;
+}
+.get iframe {
+    border: 0;
+    margin: 0 auto;
+    width: 70.3125%;
+    height: 18.75em;
+    margin-left: 14.84375%;
+    margin-right: 14.84375%;
+}
+
+.iframe-container {
+    background-color: #000;
+    width: 70.3125%;
+    border-radius: 10px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-left: 14.84375%;
+    margin-right: 14.84375%;
+    margin-bottom: 7.25em;
+    
+}
+
+/*Tank Section*/
+
+.tankssection {
+    width: 100%;
+}
+
+.tanks {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.tankstats {
+    width: 35.9375%;
+    float: left;
+    margin-left: 7.03125%;
+    margin-right: 7.03125%;
+}
+
+.tankstats figcaption {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.2vw;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+.tankstats p {
+    display: inline-block;
+    width: 100%;
+    font-family: lato, sans-serif;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 0.625em;
+    
+}
+
+.tankstats img {
+    width: 100%;
+    height: auto;
+}
+
+.statbar {
+    padding-top: 2.1875em;
+    margin-bottom: 4.25em;
+}
+
+.backtotop {
+    clear: both;
+    color: #000;
+    font-family: ozwald, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    float: right;
+    margin-right: 0.625em;
+    padding-bottom: 0.625em;
+        
+}
+
+
+/*Footer Section*/
+
+footer {
+    background-color: #303030;
+    color: #fff;
+    clear: both;
+    overflow: hidden;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.footerinfo {
+    width: 32.03125%;
+    margin-left: 0.625em;
+    float: left;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    vertical-align: middle;
+}
+
+.footerinfo p {
+    font-family: lato,sans-serif;
+    font-size: 1.4vw;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.unitylogo {
+    width: 32.03125%;
+    float: left;
+    text-align: center;
+    padding-top: 2.5em;
+}
+
+.unitylogo img {
+    width: 50%;
+}
+
+.footersocial {
+    width: 32.03125%;
+    float: right;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 2.5em;
+    margin-right: 0.625em;
+}
+
+.footersocial img {
+    padding-left: 25px;
+    padding-top: 0.45em;
+}
+
+.socialicons {
+    width: 15%;
+    height: auto;
+}
+
+.footersocial p {
+    font-family: lato,sans-serif;
+    font-size: 1.6vw;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.footerinfo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerinfo a:hover {
+    color: #b46a00;
+}
+
+/*Media Quieries*/
+
+@media only screen and (max-width: 360px) {
+    .navbar img {
+    padding-top: 0.825em;
+    padding-bottom: 0.625em;
+    width: 45px;
+    
+}
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .logo {
+        max-width: 95%;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        padding-top: 0.75em;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+        padding-top: 0.75em;
+    }
+    
+    .about {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .abouttext {
+        width: 98.4375%;
+        padding-left: 0.78125%;
+        padding-right: 0.78125%;
+    }
+
+    .abouttext p {
+        font-family: lato, sans-serif;
+        font-size: 1.1em;
+        padding-bottom: 1.5625em;
+        padding-left: 0.78125%;
+        padding-right: 0.78125%;
+        text-align: left;
+    }
+
+    .abouttext p:nth-child(5) {
+        font-size: 1.2em;
+    }
+
+    .knowmore {
+        font-weight: 700;
+        margin-top: 0;
+    }
+
+    /*Trailer Section*/
+
+    .trailer {
+        width: 98.4375%;
+        padding-left: 0.78125%;
+        padding-right: 0.78125%;
+        padding-top: 0;
+    }
+
+    .trailer video {
+        max-width: 98.4375%;
+        padding-left: 0.78125%;
+        padding-right: 0.78125%;
+        height: auto; 
+    }
+
+    .trailer figcaption {
+        padding-bottom: 4em;
+        font-size: 1.2em;
+        padding-left: 0.78125%;
+        font-weight: 600;
+    }
+    
+    /*Screenshots Section*/
+
+.img-container {
+    float: left;
+    display: block;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.screenshots {
+    padding-bottom: 1.3em;
+    margin: 0 auto;
+}
+
+.screenshots figure {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2.5em;
+}
+
+.screenshots figcaption {
+    font-size: 1.2em;
+    padding-bottom: 1.3em;
+}
+    
+/*Gnomes Section*/
+    
+.gnomescontainer {
+    width: 100%;
+}
+
+.gnomes {
+    clear: both;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-bottom: 1.8em;
+}
+
+.gnomes figure {
+    width: 100%;
+    height: auto; 
+}
+
+.abominable {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+}
+
+.abominable img {
+    width: 100%;
+    height: auto;
+}
+
+.gnomeinator {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+}
+
+.gnomeinator img {
+    width: 100%;
+    height: auto;
+}
+
+.gnomerunner {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+}
+
+.gnomerunner img {
+    width: 100%;
+    height: auto;
+}
+
+.inuit {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+}
+
+.inuit img {
+    width: 100%;
+    height: auto;
+}
+
+.mummy {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+
+}
+
+.mummy img {
+    width: 100%;
+    height: auto;
+}
+
+.mummyrender {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+}
+
+.mummyrender img {
+    width: 100%;
+    height: auto;
+}
+
+.gnomes figcaption {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 0.625em;
+    padding-bottom: 0;
+}
+
+.gnomes p {
+    font-family: lato, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 2em;
+    width: 72.916667%;
+    margin: 0 auto;
+    
+}
+
+/*Get Section*/
+
+.get {
+    clear: both;
+    overflow: hidden;
+    background-color: #9a3737;
+    color: #000;
+}
+
+.get .container {
+    clear: both;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #9a3737;
+    overflow: hidden;
+}
+.get iframe {
+    margin: 0 auto;
+    width: 91.666667%;
+    margin-left: 4.1666665%;
+    margin-right: 4.1666665%;
+}
+
+.iframe-container {
+    background-color: #000;
+    width: 91.666667%;
+    padding-bottom: 2.1875em;
+    padding-top: 2.1875em;
+    margin-left: 4.1666665%;
+    margin-right: 4.1666665%;
+    margin-bottom: 6em;
+    
+}
+
+/*Tank Section*/
+
+.tankssection {
+    width: 100%;
+}
+
+.tanks {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.tankstats {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+}
+
+.tankstats figcaption {
+    font-family: ozwald, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+.tankstats p {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    font-family: lato, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1.5625em;
+    
+}
+
+.tankstats img {
+    width: 100%;
+    height: auto;
+}
+
+.statbar {
+    padding-top: 2.1875em;
+    margin-bottom: 4em;
+}
+
+.backtotop {
+    clear: both;
+    color: #000;
+    font-family: ozwald, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    float: right;
+    margin-right: 0.625em;
+    padding-bottom: 0.625em;
+        
+}
+
+/*Footer Section*/
+
+footer {
+    background-color: #303030;
+    color: #fff;
+    clear: both;
+    overflow: hidden;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.footerinfo {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+    padding-top: 2.5em;
+    padding-bottom: 2em;
+    vertical-align: middle;
+}
+
+.footerinfo p {
+    font-family: lato,sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.unitylogo {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.unitylogo img {
+    width: 75%;
+}
+
+.footersocial {
+    width: 95.833333%;
+    margin-left: 2.083333%;
+    margin-bottom: 2.083333em;
+    text-align: center;
+    padding-top: 2em;
+    margin-right: 0.625em;
+}
+
+.footersocial img {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.socialicons {
+    width: 15%;
+    height: auto;
+}
+
+.footersocial p {
+    font-family: lato,sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-right: 0;
+}
+
+.footerinfo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerinfo a:hover {
+    color: #b46a00;
+}
+
+}
